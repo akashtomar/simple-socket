@@ -14,6 +14,7 @@ class App extends Component {
     send(){
         const socket = io.connect(this.state.endpoint);
         socket.emit("change color", this.state.color);
+        this.setColor();
     }
     setColor(){
         let color = "white" 
@@ -29,9 +30,7 @@ class App extends Component {
       })
       return(
           <div style={{ textAlign: "center"}}>
-            <button onClick={ () => this.send() }> change color</button>
-            <button id="toggle" onClick={() => this.setColor()}>Toggle Color</button>
-            
+            <button id="toggle" onClick={() => this.send()}>Toggle Color</button>
           </div>
       )
     }
