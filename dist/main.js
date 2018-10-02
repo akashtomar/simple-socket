@@ -783,6 +783,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 
 /***/ }),
 
+/***/ "./src/HelloWorld.js":
+/*!***************************!*\
+  !*** ./src/HelloWorld.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar HelloWorld = function (_Component) {\n    _inherits(HelloWorld, _Component);\n\n    function HelloWorld() {\n        _classCallCheck(this, HelloWorld);\n\n        var _this = _possibleConstructorReturn(this, (HelloWorld.__proto__ || Object.getPrototypeOf(HelloWorld)).call(this));\n\n        _this.state = {\n            msg: \"hello world\"\n        };\n        return _this;\n    }\n\n    _createClass(HelloWorld, [{\n        key: \"changeMsg\",\n        value: function changeMsg(msg) {\n            this.setState({ msg: msg });\n        }\n    }, {\n        key: \"render\",\n        value: function render() {\n            var _this2 = this;\n\n            console.log(\"rendered!\");\n            return _react2.default.createElement(\n                \"div\",\n                null,\n                _react2.default.createElement(\n                    \"h1\",\n                    null,\n                    \"Hello World!\"\n                ),\n                _react2.default.createElement(\n                    \"button\",\n                    { onClick: function onClick() {\n                            return _this2.changeMsg(\"hi!\");\n                        } },\n                    \"Hello there\"\n                )\n            );\n        }\n    }]);\n\n    return HelloWorld;\n}(_react.Component);\n\n_reactDom2.default.render(_react2.default.createElement(HelloWorld, null), document.getElementById(\"helloWorld\"));\nexports.default = HelloWorld;\n\n//# sourceURL=webpack:///./src/HelloWorld.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -791,7 +803,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _App = __webpack_require__(/*! ./App */ \"./src/App.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nvar _main = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n\nvar _main2 = _interopRequireDefault(_main);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nvar _App = __webpack_require__(/*! ./App */ \"./src/App.js\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nvar _HelloWorld = __webpack_require__(/*! ./HelloWorld */ \"./src/HelloWorld.js\");\n\nvar _HelloWorld2 = _interopRequireDefault(_HelloWorld);\n\nvar _main = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n\nvar _main2 = _interopRequireDefault(_main);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
